@@ -57,7 +57,7 @@ async function questionSolver(moduleUrl,code,qName,gTab){
             await gTab.keyboard.press("A");
             await gTab.keyboard.press("V");
             await gTab.keyboard.up("Control");
-            await waitAndClick(".pull-right.btn.btn-primary.hr-monaco-submit",gTab);
+            return waitAndClick(".pull-right.btn.btn-primary.hr-monaco-submit",gTab);
 }
 
 console.log("After");
