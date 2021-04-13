@@ -52,6 +52,7 @@ async function scrolltoBottom(page,title){
     function getLengthConsoleFn(title){
         window.scrollBy(0,window.innerHeight);
         let titleElemArr=document.querySelectorAll(title);
+        console.log(titleElemArr.length);
         return titleElemArr.length;
 
     }
